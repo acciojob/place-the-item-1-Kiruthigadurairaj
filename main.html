@@ -4,9 +4,42 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
-</head>
+<style>
+    .holder {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    /* Styling individual items */
+    .item {
+        width: 100px;
+        height: 100px;
+        display: flex;
+        font-weight: bold;
+		font-size: 35px;
+        margin: 10px;
+    }
 
+    .item:nth-child(1) {
+        background-color: darkgreen; /* Item 1 color */
+    }
+
+    .item:nth-child(2) {
+        background-color: red; /* Item 2 color */
+    }
+
+    .item:nth-child(3) {
+        background-color: blue; /* Item 3 color */
+    }
+</style>
 <body>
+<div class="holder">
+    <div class="item">3</div>
+    <div class="item">1</div>
+    <div class="item">2</div>
+</div>
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
